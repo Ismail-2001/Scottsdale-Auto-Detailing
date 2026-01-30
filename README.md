@@ -1,155 +1,124 @@
-# North Scottsdale Auto Detailing 🏎️✨
+# Scottsdale Auto Detailing | Stealth Luxury Concierge
 
-[![React](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-6.0-646CFF.svg)](https://vitejs.dev/)
 
-A premium, high-conversion landing page for **North Scottsdale Auto Detailing**. This project is a production-ready web application designed for elite mobile detailing services, featuring a "Stealth Luxury" aesthetic, optimized performance, and high-end animations. Built for the uncompromising vehicle owner, it provides a seamless user experience from service discovery to booking.
-
----
-
-## 💎 Key Features
-
-- **Premium Aesthetic**: A curated "Stealth Luxury" design system using glassmorphism, metallic gradients, and obsidian color palettes.
-- **Modular Component Architecture**: Fully refactored into reusable React components for maximum maintainability.
-- **Scroll-Triggered Animations**: Smooth, high-performance reveal animations using `IntersectionObserver`.
-- **Performance Optimized**: 
-  - Responsive image loading (`srcset`) for the hero section.
-  - Lazy-loading for non-critical assets.
-  - Minimal bundle size through Vite tree-shaking.
-- **SEO & Social Ready**: Comprehensive Meta tags, Open Graph protocol, and JSON-LD Structured Data (Schema.org) for local business ranking.
-- **Mobile First**: Fully responsive navigation and touch-optimized UI components.
+## 1. Project Overview
+**Scottsdale Auto Detailing** is a premium, high-performance landing page engineered for an elite automotive concierge service in North Scottsdale, Arizona. Unlike standard detailing websites, this platform utilizes a "Stealth Luxury" design language—prioritizing cinematic visuals, surgical precision in layout, and a conversion-centric user journey. It is designed specifically for collectors and enthusiasts who demand showroom perfection, offering a digital experience that mirrors the high-end craftsmanship of physical detailing protocols.
 
 ---
 
-## 🛠️ Tech Stack
+## 2. Key Features
+- **Stealth Luxury UI/UX**: A bespoke design system utilizing obsidian-deep palettes, metallic gold accents, and advanced glassmorphism.
+- **Bespoke Service Protocols**: Interactive service grid showcasing multi-stage paint correction, ceramic coatings, and interior restoration with high-fidelity imagery.
+- **Social Proof Architecture**: Dynamic "Client Chronicles" (Testimonials) and verified performance metrics (e.g., $10M+ insured value).
+- **Cinematic Experience**: Custom-engineered animations including slow-pulse hero backgrounds, shimmer effects, and intersection-observed scroll reveals.
+- **Conversion Optimization**: High-intent Call-to-Action (CTA) flow ("Secure Session", "Request a Quote") integrated with a seamless contact infrastructure.
+- **Responsive Engineering**: A mobile-first approach ensuring the premium aesthetic is preserved on devices ranging from smartphones to ultra-wide displays.
 
+---
+
+## 3. Tech Stack
 ### Frontend
-- **React 19**: Utilizing the latest concurrent rendering features.
-- **TypeScript**: Strict type-checking for robust, self-documenting code.
-- **Tailwind CSS**: Utility-first styling with custom theme extensions for premium aesthetics.
-- **Lucide React**: Clean, accessible iconography.
+- **React 18**: Component-based architecture for high modularity.
+- **TypeScript**: Strict typing for mission-critical reliability and developer ergonomics.
+- **Tailwind CSS**: Utility-first styling with a deeply customized `tailwind.config.js` for premium design tokens.
+- **Lucide React**: For sleek, consistent iconography.
 
-### Build & Tools
-- **Vite**: Ultra-fast next-generation frontend tooling.
-- **PostCSS / Autoprefixer**: Industry-standard CSS transformation.
-- **ESLint**: Standardized code quality enforcement.
+### Build & Tooling
+- **Vite**: Next-generation frontend tooling for lightning-fast HMR and optimized production builds.
+- **PostCSS**: Advanced CSS transformation (Autoprefixer, nesting).
+- **Git**: Version control hosted on GitHub.
 
-### Hosting & Deployment
-- **Recommended**: [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/) (Optimized for Vite/React).
-
----
-
-## 🏗️ Architecture
-
-The project follows a modern, atomic-inspired file structure:
-
-```text
-src/
-├── components/
-│   ├── layout/      # High-level page structure (Navbar, Hero, Footer)
-│   ├── features/    # Domain-specific components (ServiceCard, ReviewCard)
-│   └── ui/          # Reusable primitive components (Button, RevealOnScroll)
-├── data/            # Centralized content management (Services, Reviews)
-├── types/           # TypeScript interfaces and type definitions
-├── App.tsx          # Main application assembler
-└── index.tsx        # Application entry point
-```
+### Hosting / Deployment
+- **Vercel / Netlify**: (Recommended) Optimized for Vite-based React applications.
 
 ---
 
-## 🚀 Installation & Setup
+## 4. Architecture
+The project follows a modern, atomic-inspired component architecture:
+- **`/src/components/layout`**: Persistent structural components (Navbar, Hero, Footer).
+- **`/src/components/features`**: Core business logic modules (Service Grid, Process Section, Reviews).
+- **`/src/components/ui`**: Highly reusable, low-level primitive components (Buttons, Reveal-on-Scroll).
+- **`/src/data.ts`**: Centralized content management (SSOT) for easier copy and image updates without touching JSX.
 
+---
+
+## 5. Installation & Setup
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (v18.0 or higher)
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-### Step-by-Step Local Setup
-
-1. **Clone the repository**
+### Local Setup
+1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Ismail-2001/Mobile-Auto-Detailing---North-Scottsdale.git
-   cd Mobile-Auto-Detailing---North-Scottsdale
+   git clone https://github.com/Ismail-2001/Scottsdale-Auto-Detailing.git
+   cd Scottsdale-Auto-Detailing
    ```
 
-2. **Install dependencies**
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-3. **Configure Environment Variables**
-   Create a `.env` file in the root directory (optional, used for future API integrations):
-   ```text
-   VITE_APP_TITLE=North Scottsdale Auto Detailing
+3. **Initialize Environment Variables**:
+   Create a `.env` file in the root directory (if needed for future API integrations like Google Maps or EmailJS):
+   ```env
+   VITE_APP_TITLE=Scottsdale Auto Detailing
    ```
 
-4. **Start Development Server**
-   ```bash
-   npm run dev
-   ```
-   The app will be available at `http://localhost:3000`.
+---
+
+## 6. Usage
+To start the development server with Hot Module Replacement (HMR):
+```bash
+npm run dev
+```
+The site will be available at `http://localhost:3005` (or the configured port).
+
+To create an optimized production build:
+```bash
+npm run build
+```
 
 ---
 
-## 📖 Usage
-
-- **Development**: `npm run dev` - Runs the app with Hot Module Replacement (HMR).
-- **Build**: `npm run build` - Compiles the project into highly optimized static assets in the `dist/` folder.
-- **Preview**: `npm run preview` - Locally boot the production build for final testing.
-- **Lint**: `npm run lint` - Run ESLint to check for code quality issues.
-
----
-
-## 🚢 Deployment
-
-### Deploying to Netlify/Vercel
-1. Connect your GitHub repository to the platform.
-2. Set **Build Command**: `npm run build`
-3. Set **Publish Directory**: `dist`
-4. Deploy!
-
-### Manual Deployment
-Upload the contents of the `dist/` folder to any static hosting service (S3, Nginx, Apache).
+## 7. Deployment
+The fastest way to deploy this project is via [Vercel](https://vercel.com):
+1. Push your code to the GitHub repository.
+2. Connect the repository to Vercel.
+3. Vercel will automatically detect the Vite configuration and deploy.
 
 ---
 
-## 📸 Screenshots / Demo
+## 8. Screenshots / Demo
+> **Live Demo**: [https://scottsdale-auto-detailing.vercel.app](https://github.com/Ismail-2001/Scottsdale-Auto-Detailing) *(Placeholder Link)*
 
-> [!TIP]
-> **View Live Demo**: [Insert Your Link Here]
-
-| Hero Section | Services Grid |
-| :--- | :--- |
-| ![Hero Placeholder](https://via.placeholder.com/800x450?text=Hero+Aesthetic) | ![Grid Placeholder](https://via.placeholder.com/800x450?text=Service+Cards) |
+*(Add screenshots here after final hosting)*
 
 ---
 
-## 🗺️ Roadmap
-
-- [ ] **Phase 1**: Integration of a lead capture form with email automation (EmailJS/Web3Forms).
-- [ ] **Phase 2**: Interactive "Before/After" slider gallery for restoration work.
-- [ ] **Phase 3**: Dynamic booking system integration (Calendly/Custom).
-- [ ] **Phase 4**: Blog engine for local SEO content marketing.
+## 9. Roadmap
+- [ ] **Phase 2**: Integration of an AI-powered Booking Assistant to handle 24/7 quote requests.
+- [ ] **Phase 3**: Dynamic Google Maps API integration with service area "heat maps".
+- [ ] **Phase 4**: Customer portal for tracking vehicle restoration stages in real-time.
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
+## 10. Contributing
+Contributions are welcome! To maintain the high aesthetic and technical standards of this project:
 1. Fork the Project.
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the Branch (`git origin feature/AmazingFeature`).
+4. Push to the Branch (`git push origin feature/AmazingFeature`).
 5. Open a Pull Request.
 
 ---
 
-## 📜 License
-
+## 11. License
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-**Designed with precision by Ismail-2001.**
+**Developed with precision by [Ismail](https://github.com/Ismail-2001)**

@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply overflow-x-hidden antialiased bg-obsidian text-white selection:bg-gold-500/30 selection:text-white;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* Custom scrollbar - Stealth Luxury Look */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030303;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 0px;
+  border: 3px solid #030303;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B4942B;
+}
+
+/* Premium UI Utilities */
+.glass-panel {
+  background: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #FACC15 50%, #B4942B 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-glow-subtle {
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.border-gold-subtle {
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.mask-fade-bottom {
+  mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Section Transitions */
+.reveal-transition {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
